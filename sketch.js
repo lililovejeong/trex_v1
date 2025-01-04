@@ -31,7 +31,7 @@ function preload(){
 
     jumpSound = loadSound("jump.mp3");
     dieSound = loadSound("die.mp3");
-    checkPointSound = loadSound("checkPoint.mp3");
+    //checkPointSound = loadSound("checkPoint.mp3");
 
 }
 
@@ -96,7 +96,7 @@ function draw(){
         score= score + Math.round(getFrameRate()/10);
 
         if(score>0 && score%200 === 0){
-            checkPointSound.play();
+            //checkPointSound.play();
         }
 
         if(ground.x < 0){
